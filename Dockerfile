@@ -7,7 +7,13 @@
 
 # Rust toolchain container, to build and run a rust application.
 
+# Latest rust stable release image.
+# https://hub.docker.com/_/rust/
 FROM rust:latest
+
+# Latest rust nightly release image.
+# https://hub.docker.com/r/rustlang/rust/
+## FROM rustlang/rust:nightly
 
 ARG APP_HOME_DIR=/home/app
 
