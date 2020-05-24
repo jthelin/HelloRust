@@ -16,11 +16,6 @@
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
 
-# Declare files that will always have Windows CRLF line endings on checkout.
-*.sln text eol=crlf
-*.bat text eol=crlf
-*.cmd text eol=crlf
-
 # Declare files that will always have UNIX LF line endings on checkout.
 *.sh text eol=lf
 
