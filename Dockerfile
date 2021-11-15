@@ -9,7 +9,7 @@
 
 # Latest rust stable release image.
 # https://hub.docker.com/_/rust/
-FROM rust:latest
+FROM rust:1.56.1
 
 # Latest rust nightly release image.
 # https://hub.docker.com/r/rustlang/rust/
@@ -22,6 +22,9 @@ COPY . .
 
 RUN rustc --version && cargo --version && rustup --version
 
+# DL3059 info: Multiple consecutive RUN instructions. Consider consolidation.
+# hadolint ignore=DL3059
+
 RUN cargo install --path .
 
-CMD cargo run
+CMD [ "cargo", "run" ]
