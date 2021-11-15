@@ -1,8 +1,8 @@
 ## Build with command [from repo root directory]:
-# docker build --tag hellorust . --file ./Dockerfile
+#  docker build --tag hellorust . --file ./Dockerfile
 ##
 ## Run with command:
-# docker run --rm -it hellorust cargo run --release Jorgen
+#  docker run --rm -it hellorust cargo run --release Jorgen
 ##
 
 # Rust toolchain container, to build and run a rust application.
